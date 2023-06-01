@@ -1,0 +1,691 @@
+/* Tip, copy paste from 13c.01.01 & 13c.01.02 to get fonts and colors up and running ... */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500;700;900&display=swap");
+
+
+
+body{
+
+    font-size: 16px;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    margin: 0%;
+   
+    
+}
+h2{
+
+  padding-top: 3em;
+  text-align: center;
+}
+nav img{
+    
+width: 5rem
+}
+
+nav{
+
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+
+nav button{
+
+    border: none;
+    padding: 1.5rem;
+   text-decoration: underline;
+    border-radius: 8px;
+    background-color: white;
+    font-family: "Zen Kaku Gothic Antique", sans-serif; 
+    font-size: 1rem;
+}
+
+nav ul {
+
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+    background-size: cover;
+     
+
+}
+
+header {
+    position: relative;
+    height: 70rem; /* Set the height of the hero section */
+  }
+  
+  .header_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .header_video video {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+.header_text{
+    color: var(--light);
+    width: 90%;
+    margin: auto;
+}
+
+h1{
+
+    font-size: 6rem;
+}
+
+.advantages_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    width: 90%;
+    margin: auto;
+    padding-top: 4em;
+  }
+  
+  .advantages_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .advantages_card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .advantages_card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .advantages_card_text {
+    padding: 20px;
+  }
+  
+  .advantages_card h3 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: bold;
+    
+  }
+  
+  .advantages_card p {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.product_container {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 200px; 
+  width: 90%;
+    margin: auto;
+    
+}
+
+.image {
+  width: 50%;
+  margin-right: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  width: 50%;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: block;
+  }
+  
+  .product_container {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .image {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    width: 100%;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+  
+.product_container {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 200px; /* customize this as per your requirement */
+}
+  
+.image {
+  width: 50%;
+  margin-right: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+.text {
+  width: 50%;
+}
+#message{
+  
+    width: 30vw;;
+}
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .text {
+    width: 60%;
+  }
+}
+
+  
+
+.text hr{
+
+    width: 44rem;;
+} 
+
+
+#product{
+
+  padding-top: 4em;
+}
+
+#product h2{
+
+  padding-top: 33emm;
+}
+
+
+
+/* Contact form styling */
+#contact {
+  background-color: #f7f7f7;
+  padding: 50px;
+}
+
+#contact h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+#contact_form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form_group {
+  margin-bottom: 20px;
+  width: 48%;
+}
+
+.form_group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form_group input,
+.form_group textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.form_group input:focus,
+.form_group textarea:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+.form_group button[type="submit"] {
+  background-color: #080808;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.form_group button[type="submit"]:hover {
+  background-color: #f52323;
+  
+}
+
+/* Media query for very big screens */
+@media only screen and (min-width: 1200px) {
+  #contact_form {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 768px) {
+  .form_group {
+    width: 100%;
+  }
+
+  #contact_form {
+    padding: 20px;
+  }
+}
+#message{
+
+  width: 85vw;;
+}
+
+footer {
+  background-color: #f5f5f5;
+  color: #000;
+  display: flex;
+  padding: 40px 20px;
+}
+
+/* Apply styles for the first div inside footer */
+footer > div {
+  width: 30%;
+  margin-right: 40px;
+}
+
+/* Style the logo heading */
+footer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Add spacing between list items and remove bullets */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Add hover effect for links */
+footer a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Apply styles for the second section inside footer */
+footer section {
+  display: flex;
+  width: 100%;
+  max-width: 90rem; /* Optional: set a maximum width to prevent overflowing content */
+  column-gap: 5rem;
+  justify-content: center;
+}
+
+
+/* Center-align headings */
+footer section h3 {
+  
+  margin-bottom: 20px;
+}
+
+/* Apply individual styles for each list in sections */
+footer ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  /* Reset column gap in footer section */
+  footer section {
+    column-gap: 0;
+  }
+  
+  /* Set width of the first div to auto */
+  footer > div {
+    width: auto;
+    margin-right: 0;
+  }
+  
+  /* Change the layout of the second section */
+  footer section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.highlight {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  
+}
+
+.highlight h2 {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.highlight_small_cards {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.highlight_small_cards div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.highlight_small_cards div h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+button {
+ 
+  
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 40%;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .highlight {
+    grid-template-rows: repeat(2, auto); /* Use repeat() function to define multiple rows with the same size */
+    justify-items: center;
+    align-items: center;
+  }
+
+  .highlight h2 {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 20px 10px;
+    text-align: left;
+  }
+
+  .highlight_small_cards {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .highlight_small_cards div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .team-member {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.team_text {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.team_graphics {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .team_graphics {
+    padding: 0;
+    margin-top: 0;
+    margin-left: 20px;
+    text-align: left;
+  }
+}
+
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  
+  text-decoration: none;
+}
+
+/* Header styles */
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+header li {
+  display: inline-block;
+  margin-left: 10px;
+
+}
+
+/* Introduction styles */
+#intro {
+  background-color: white;
+  color: black;
+  padding: 50px;
+
+}
+
+/* Assignments styles */
+#assignments {
+  background-color: #f5f5f5;
+  color: black;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.assignment-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.assignment-card h3 {
+  margin-top: 0;
+}
+
+.assignment-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Conclusion styles */
+#bigconclusion {
+  
+  color: rgb(0, 0, 0);
+  margin: auto;
+  width: 90%;
+  padding:5%;
+
+}
+
+/* Footer styles */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
